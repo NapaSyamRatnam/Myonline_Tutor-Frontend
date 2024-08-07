@@ -1,0 +1,237 @@
+
+
+
+.subject-item {
+    list-style: none;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subject-details {
+    flex-grow: 1;
+  }
+  
+  .subject-details p {
+    margin: 0;
+  }
+  
+  .enroll-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .main-content1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .school-card
+   {
+    width: 50%; 
+     background-color: rgb(215, 212, 212); 
+    background-color: #ecf0f1;
+   border-radius: 20px;
+  }
+  
+  
+  
+  .college-card {
+    width: 48%; 
+    background-color: rgb(196, 193, 193); 
+    background-color: #ecf0f1;
+    border-radius: 20px;
+  }
+  
+  .school-card h2,
+  .college-card h2 {
+    color: #000000;
+    text-align: center;
+  }
+  
+  .subject-item {
+    list-style: none;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subject-details {
+    flex-grow: 1;
+  }
+  
+  .subject-details p {
+    margin: 0;
+  }
+  
+  .enroll-button {
+    /* background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer; */
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  
+  h1 {
+    color: #333;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* .main-content1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    gap: 80px;
+  
+  } */
+  
+  
+  .main-content1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 80px;
+    margin: 20px;
+  }
+  
+  
+  
+  .school-card,
+  .college-card {
+    width: 100%; 
+  }
+  
+  .school-card h2,
+  .college-card h2 {
+    color: #000000;
+  }
+  
+  .subject-item {
+    list-style: none;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subject-details {
+    flex-grow: 1;
+  }
+  
+  .subject-details p {
+    margin: 0;
+  }
+  
+  .enroll-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#0d47a1;
+    color: white;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-details {
+    text-align: left;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .course-column {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  
+  .course-item1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .course-item1:hover {
+    transform: scale(1.05);
+  }

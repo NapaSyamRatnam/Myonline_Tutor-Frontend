@@ -1,0 +1,40 @@
+/* .from23 label{
+    display: inline-block;
+
+    padding: 20px;
+  
+  }
+  .taskH2{
+    margin-left: 200px;
+  }
+  .tutorButton{
+    margin: 10px 50px;
+    width: 160px;
+  }
+  .inputtask{
+    margin-left: 150px;
+  } */
+
+  .from23 {
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .from23 label {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .from23 input[type="number"],
+  .from23 input[type="text"],
+  .from23 input[type="date"] {
+    flex: 2;
+    margin-right: 10px;
+  }
+  
+  .from23 button {
+    flex: 1;
+    margin-top: 10px;
+  }
+  

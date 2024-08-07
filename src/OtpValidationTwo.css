@@ -1,0 +1,73 @@
+.section-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+  }
+  
+  .box-forgot {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container-forgot {
+    padding: 40px;
+  }
+  
+  .form-forgot {
+    text-align: center;
+  }
+  
+  .inputBox {
+    margin-bottom: 20px;
+  }
+  
+  .inputBox label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    color: #28a745;
+    margin-top: 10px;
+  }
+  
+  .error {
+    color: #dc3545;
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .box-forgot {
+      width: 90%;
+    }
+  }
+  

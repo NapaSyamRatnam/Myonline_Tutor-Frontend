@@ -1,0 +1,96 @@
+
+  
+  .header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#0d47a1;
+    color: white;
+  }
+  
+
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-details {
+  text-align: left;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.sunil {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+
+
+.course-column {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.register-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer11 {
+  background-color: #34495e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+
+h1 {
+  color: #0d47a1;
+  text-align: center;
+  background-color: rgb(252, 252, 252);
+  border-radius: 5px;
+}
+
+.course-item2 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-item2:hover {
+  transform: scale(1.05);
+}

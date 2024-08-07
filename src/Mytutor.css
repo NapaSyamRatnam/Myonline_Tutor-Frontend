@@ -1,0 +1,13 @@
+.tutor-css{
+
+    box-shadow: 1px 1px 5px gray;
+    width: 500px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 40%;
+}
+
+.tutor-css:hover{
+    transform: scale(1.02);
+}

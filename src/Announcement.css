@@ -1,0 +1,76 @@
+
+#announcement{
+  
+  margin-top: 50px;
+  margin-left: 300px;
+  font-family: 'Arial', sans-serif;
+  /* background-color: white; */
+  border-radius: 10px;
+  color:white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+
+
+
+.add-announcement-page {
+  margin-top: 50px;
+  margin-left: 300px;
+  font-family: 'Arial', sans-serif;
+  /* background-color: white; */
+  border-radius: 10px;
+  color:white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #0066cc;
+}
+
+/* Form styles */
+.formAnnouncement {
+  max-width: 200px;
+  margin-left: 40px;
+}
+
+/* Label styles */
+.Boxa{
+  margin-right: 200px;
+  width: 100px;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Textarea styles */
+textarea {
+  width: 800px;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+.buttona {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #22bf42;
+}
+}

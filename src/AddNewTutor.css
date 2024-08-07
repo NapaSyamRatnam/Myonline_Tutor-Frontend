@@ -1,0 +1,87 @@
+.add-tutor-page-container {
+  margin-top: -50%;
+  width: 60%;
+  margin-left: 25%;
+}
+
+.add-tutor-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-tutor-heading {
+  font-size: 2.5rem;
+  color: #3498db;
+}
+
+.add-tutor-form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-tutor-form-group {
+  margin-bottom: 15px;
+  flex: 0 0 50%;
+}
+
+.add-tutor-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.add-tutor-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-tutor-error {
+  color: red;
+  margin-top: 5px;
+}
+
+.add-tutor-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-tutor-button:hover {
+  background-color: #2980b9;
+}
+
+.add-tutor-gender-category {
+  display: flex;
+}
+
+.add-tutor-gender-category input[type='radio'] {
+  margin-right: 5px;
+}
+
+.add-tutor-gender-category label {
+  margin-right: 15px;
+}
+
+
+
+.tutor-css{
+
+  box-shadow: 1px 1px 5px gray;
+  width: 500px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 40%;
+}
+
+.tutor-css:hover{
+  transform: scale(1.02);
+}

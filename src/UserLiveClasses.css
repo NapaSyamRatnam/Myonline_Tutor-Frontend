@@ -1,0 +1,213 @@
+
+
+.sidebar2 {
+    width: 220px;
+    height: 100vh;
+    background-color:  white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    float: left;
+  }
+  
+  .sidebar2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar2 li {
+    padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar2 li:hover {
+    background-color:#73787f;
+  }
+  
+  .sidebar2 label {
+    color:black;
+    font-size: 1.2em;
+  }
+  
+  .sidebar2 a {
+    text-decoration: none;
+    color: #fff;
+  }
+ 
+  .header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#0d47a1;
+    color: white;
+    height: 100px;
+  }
+  
+  .header2 h1 {
+    color: #ffffff;
+    background-color:#0d47a1;
+    font-size: 38px;
+  }
+  
+  .profile-info2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-details2 {
+    text-align: left;
+  }
+  
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  
+  .live-classes-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .course-box {
+    margin-top: 20px;
+  }
+  
+
+  .footer2 {
+    width: 100%;
+    height: 50px;
+    /* color:white; */
+    text-align: center;
+    background-color: #165fb3;
+    float: left;
+    /* width: 100%;
+    height: 50px;
+    color: aliceblue;
+    text-align: center;
+    background-color: #333;
+    float: left; */
+  }
+  
+
+  /* @media (max-width: 768px) {
+    .explore-categories h2 {
+      font-size: 1.5rem;
+    }
+  
+    .category-link {
+      padding: 8px 15px;
+      margin: 0 8px;
+    }
+  
+    .card-description h1 {
+      font-size: 2rem;
+    }
+  
+    .card-description p {
+      font-size: 1rem;
+    }
+  
+    .course-item {
+      width: 100%;
+    }
+  
+    .choose-us-item {
+      text-align: center;
+    }
+  }
+   */
+
+
+
+
+
+
+  /* .course-item27 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 500px;
+  }
+  
+  .course-item27:hover {
+    transform: scale(1.05);
+  }
+   */
+
+
+
+
+
+
+  /* .course-item27 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: auto; 
+    max-width: 500px; 
+  }
+  
+  .course-item27:hover {
+    transform: scale(1.05);
+  } */
+  
+
+
+
+
+
+  .liveclass-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-right: -10px;
+  }
+  
+  .liveclass-table th, .liveclass-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .liveclass-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .liveclass-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+
+
+
+
+
+  .currentdate{
+    text-align: right;
+  }

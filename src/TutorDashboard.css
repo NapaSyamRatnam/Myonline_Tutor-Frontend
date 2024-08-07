@@ -1,0 +1,502 @@
+/* 
+body {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Arial', sans-serif; 
+    background-size : cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  } */
+
+   /* .sidebarT{
+    width: 220px;
+    height: 100vh;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    float: left;
+      /* width: 200px;
+      height: 84vh;
+      background-color: rgb(155, 221, 221);
+      background-color: #def8f8; 
+      color: #151616; 
+      float: left; */
+  
+/*       
+  }
+  
+  .footer1 {
+    width: 100%;
+    height: 50px;
+    color:white;
+    text-align: center;
+    background-color: #165fb3;
+    float: left;
+  }
+  
+  .headerT {
+    background-color:#0d47a1;
+    font-size: 38px;
+    padding: 20px;
+      
+    }
+    
+    .profile-info {
+      display: flex;
+      align-items: center;
+    }
+    
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .user-details {
+      text-align: left;
+    }
+     .task-details{
+      margin-left: 300px;
+      width:500px;
+    
+     }
+    nav a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      color: #1b1919;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebarT ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebarT li {
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    /* padding: 10px;
+    text-align: center; */
+/*   
+  
+  .sidebarT li:hover {
+    background-color: #73787f;
+    background-color: #555; 
+  }
+  
+  .sidebarT label {
+    color: #100f0f; 
+    font-size: 1.2em;
+  }
+  .sidebarT a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .main-content{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+     margin-top: 20px;
+      
+  }
+  .button{
+    font-size: 40px;
+    margin-left: 580px;
+    background-color: #fff;
+}
+  .const initialSchedule{
+    text-decoration-color: #fff;
+  }
+  
+  .course-image{
+    width:990px ;
+    height: 500px;
+  }
+  .submitted-data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .submitted-data-table th,
+  .submitted-data-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+  .submitted-data-table th {
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  .discussions-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .discussions-table th,
+  .discussions-table td {
+    border: 1px solid white;
+    padding: 8px;
+  }
+  
+  .discussions-table th {
+    text-align: left;
+    background-color: black;
+  }
+  
+  
+.header {
+  background-color:#0d47a1;
+  height: 100px;
+  font-size: 38px;
+  color: white;
+  text-align: start;
+  padding: 15px;
+}
+.sidebar {
+  width: 200px;
+  height: 100%;
+  text-decoration: black;
+  background-color:rgb(247, 241, 241);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main-content {
+  margin-left: 150px;
+  padding: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #693ff5;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0a090b;
+}
+
+.lable{
+  text-size-adjust: 20px;
+  text-decoration:black;
+}
+.study-materials-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.study-materials-table th,
+.study-materials-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.study-materials-table th {
+  text-align: left;
+  background-color:black;
+}
+
+.linkButton{
+    font-size: 25px;
+    padding: 7px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.input-section{ 
+  width: 300px;
+  margin-left: 300px;
+}  */
+/* 
+body {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Arial', sans-serif; 
+    background-size : cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  } */
+
+  .sidebarT{
+    width: 220px;
+    height: 100vh;
+    background-color:white;
+    overflow-x: hidden;
+    padding-top: 0px;
+    float: left;
+      /* width: 200px;
+      height: 84vh;
+      background-color: rgb(155, 221, 221);
+      background-color: #def8f8; 
+      color: #151616; 
+      float: left; */
+  
+      
+  }
+  
+  .footer1 {
+    width: 100%;
+    height: 50px;
+    color:white;
+    text-align: center;
+    background-color: #165fb3;
+    float: left;
+  }
+  
+  .headerT {
+    background-color:#0d47a1;
+    font-size: 38px;
+    padding: 20px;
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color:#0d47a1;
+      color: rgb(213, 214, 215); */
+    }
+    
+    .profile-info {
+      display: flex;
+      align-items: center;
+    }
+    
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    
+    .user-details {
+      text-align: left;
+    }
+     .task-details{
+      margin-left: 300px;
+      width:500px;
+    
+     }
+    nav a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      color: #1b1919;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebarT ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebarT li {
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    /* padding: 10px;
+    text-align: center; */
+  }
+  
+  .sidebarT li:hover {
+    background-color: #73787f;
+     background-color: #555;  
+  }
+  
+  .sidebarT label {
+    color:white; 
+    font-size: 1.2em;
+  }
+  .sidebarT a {
+    text-decoration: none;
+    color:black;
+  }
+  .main-content{
+    display: flex;
+     flex-direction: column;
+    align-items: center;
+     margin-top: 20px;
+      
+  }
+  .button{
+    font-size: 40px;
+    margin-left: 580px;
+    background-color: #fff;
+}
+  .const initialSchedule{
+    text-decoration-color: #fff;
+  }
+  
+  .course-image{
+    width:990px ;
+    height: 500px;
+  }
+  .submitted-data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .submitted-data-table th,
+  .submitted-data-table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+  .submitted-data-table th {
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+  .discussions-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .discussions-table th,
+  .discussions-table td {
+    border: 1px solid white;
+    padding: 8px;
+  }
+  
+  .discussions-table th {
+    text-align: left;
+    background-color: black;
+  }
+  
+  
+.header {
+  background-color:#0d47a1;
+  height: 100px;
+  font-size: 38px;
+  color: white;
+  text-align: end;
+  padding: 15px;
+}
+.sidebar {
+  width: 200px;
+  height: 100%;
+  text-decoration: black;
+  background-color:rgb(247, 241, 241);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main-content {
+  margin-left: 150px;
+  padding: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #693ff5;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0a090b;
+}
+
+.lable{
+  text-size-adjust: 20px;
+  text-decoration:black;
+}
+.study-materials-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.study-materials-table th,
+.study-materials-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.study-materials-table th {
+  text-align: left;
+  background-color:black;
+}
+
+.linkButton{
+    font-size: 25px;
+    padding: 7px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.input-section{ 
+  width: 300px;
+  margin-left: 300px;
+}
+
+.main-content {
+  background-color: #ffffff; /* Background color of the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px; /* Padding inside the card */
+  width: 50%;
+  margin-left: 30%;
+}

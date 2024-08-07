@@ -1,0 +1,170 @@
+/*   
+
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #1b1919;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.box{
+  background-color: #fff;
+  border: 1px solid #c2bdbd;
+  padding: 60px;
+  margin: 6px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar8 {
+  width: 220px;
+  height: 100vh;
+  background-color:white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  float: left;
+}
+
+.footer8 {
+  width: 100%;
+  height: 50px;
+  color: aliceblue;
+  text-align: center;
+  background-color: #333;
+  float: left;
+}
+
+.header8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#0d47a1;
+  color: white;
+  height: 100px;
+
+
+}
+
+
+.header8 h1 {
+  color: #ffffff;
+ background-color:#0d47a1;
+  font-size: 38px;
+}
+
+.sidebar8 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar8 li {
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar8 li:hover {
+  background-color: #445161;
+}
+
+.sidebar8 label {
+  color:black;
+  font-size: 1.2em;
+}
+
+
+.sidebar8 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-content8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+.course-item8 {
+   
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-item8:hover {
+  transform: scale(1.05);
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+} */
+
+/* .notification-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-card h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #343a40;
+  
+}
+
+.notification-card p {
+  margin: 0;
+  color: #6c757d;
+} */
+.notification-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-card h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #343a40;
+  
+}
+
+.notification-card p {
+  margin: 0;
+  color: #6c757d;
+}
+
+.notification-container {
+  display: flex;
+}
+
+
+
+
+
+
+
+

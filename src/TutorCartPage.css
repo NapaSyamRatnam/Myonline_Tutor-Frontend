@@ -1,0 +1,57 @@
+/* Add this CSS in your App.css or create a new CSS file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .tutor-profile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .tutor-profile h2 {
+    color: #0066cc;
+  }
+  
+  .tutor-profile p {
+    color: #666;
+  }
+  
+  .tutor-profile button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tutor-profile button:hover {
+    background-color: #005bb5;
+  }
+  
+  .cart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Add more styles as needed */
+  
