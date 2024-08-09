@@ -7,7 +7,7 @@ function AcadamicTutorList() {
   const [tutors, setTutors] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://192.168.138.130:8080/api-v1/by-course/Academic`)
+    axios.get(`http://3.7.14.21:8080/api-v1/by-course/Academic`)
       .then(response => {
         setTutors(response.data);
       })

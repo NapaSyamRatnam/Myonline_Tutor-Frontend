@@ -52,7 +52,7 @@ function PayOne() {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axios.post('http://192.168.138.130:8080/api/pays/payregistration', {
+        const response = await axios.post('http://3.7.14.21:8080/api/pays/payregistration', {
           currency: cardDetails.currency,
           cardNumber: cardDetails.cardNumber,
           cardHolder: cardDetails.cardHolder,

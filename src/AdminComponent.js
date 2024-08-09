@@ -9,7 +9,7 @@ function AdminComponent() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get('http://192.168.138.130:8080/api/help/questions');
+        const response = await axios.get('http://3.7.14.21:8080/api/help/questions');
         setQuestions(response.data);
       } catch (error) {
         console.error('Error fetching questions:', error);
@@ -21,7 +21,7 @@ function AdminComponent() {
 
   const handleAnswerQuestion = async (questionId, answer) => {
     try {
-      await axios.post(`http://192.168.138.130:8080/api/help/questions/${questionId}/answer`, {
+      await axios.post(`http://3.7.14.21:8080/api/help/questions/${questionId}/answer`, {
         answer: answer,
       });
       // Optionally update the UI to reflect that the question has been answered

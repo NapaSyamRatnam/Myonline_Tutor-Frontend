@@ -66,7 +66,7 @@ function UserAttendance({ currentUser }) {
     if (currentUser) {
       axios
         .get(
-          `http://192.168.138.130:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`
+          `http://3.7.14.21:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`
         )
         .then((response) => {
           setUserDetails(response.data[0]); // Assuming the API returns a single user
@@ -80,7 +80,7 @@ function UserAttendance({ currentUser }) {
   useEffect(() => {
     if (currentUser) {
       axios
-        .get(`http://192.168.138.130:8080/user/user/${currentUser.id}`)
+        .get(`http://3.7.14.21:8080/user/user/${currentUser.id}`)
         .then((response) => {
           setAttendance(response.data);
         })

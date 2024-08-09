@@ -475,7 +475,7 @@ function CashTransactionDetails() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://192.168.138.130:8080/cash/latest');
+      const response = await axios.get('http://3.7.14.21:8080/cash/latest');
       if (response.data) {
         setCashTransaction(response.data);
         setError('');
@@ -492,7 +492,7 @@ function CashTransactionDetails() {
 
   const fetchUserDetails = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api/users/latest');
+      const response = await axios.get('http://3.7.14.21:8080/api/users/latest');
       if (response.data) {
         setUserDetails(response.data);
         setError('');

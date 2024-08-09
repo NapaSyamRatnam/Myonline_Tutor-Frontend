@@ -100,7 +100,7 @@ function SchoolUserList() {
   }, [courseType]);
 
   const fetchData = () => {
-    axios.get(`http://192.168.138.130:8080/api/users/by-course/Academic-School`)
+    axios.get(`http://3.7.14.21:8080/api/users/by-course/Academic-School`)
       .then(response => {
         setUsers(response.data); // Update users state with fetched data
       })
@@ -108,7 +108,7 @@ function SchoolUserList() {
         console.error(`Error fetching ${courseType} course users:`, error);
       });
 
-    axios.get(`http://192.168.138.130:8080/api-v1/by-course/School`)
+    axios.get(`http://3.7.14.21:8080/api-v1/by-course/School`)
       .then(response => {
         setTutorData(response.data);
       })
@@ -151,7 +151,7 @@ function SchoolUserList() {
     // Log postData for debugging
     console.log("Sending data to backend:", postData);
   
-    axios.post("http://192.168.138.130:8080/admin/assign", postData)
+    axios.post("http://3.7.14.21:8080/admin/assign", postData)
       .then(response => {
         console.log(postData);
         console.log("Tutor assigned successfully");

@@ -32,7 +32,7 @@ function CreateFile() {
     useEffect(() => {
         const tutorId = localStorage.getItem('tutorId');
         if (tutorId) {
-            axios.get(`http://192.168.138.130:8080/api-v1/${tutorId}`)
+            axios.get(`http://3.7.14.21:8080/api-v1/${tutorId}`)
                 .then(response => {
                     setTutorData(response.data);
                 })
@@ -49,7 +49,7 @@ function CreateFile() {
     }, [tutorData]);
 
     const fetchData = () => {
-        axios.get(`http://192.168.138.130:8080/api/users/by-course/${tutorData.courses.join(',')}`)
+        axios.get(`http://3.7.14.21:8080/api/users/by-course/${tutorData.courses.join(',')}`)
             .then(response => {
                 setUsers(response.data); // Update users state with fetched data
             })
@@ -183,7 +183,7 @@ function CreateFile() {
             });
 
             try {
-                const response = await axios.post(`http://192.168.138.130:8080/api/file/addFile`, formDataToSend, {
+                const response = await axios.post(`http://3.7.14.21:8080/api/file/addFile`, formDataToSend, {
                     headers: {
                         'Content-Type': 'multipart/form-data'
                     }

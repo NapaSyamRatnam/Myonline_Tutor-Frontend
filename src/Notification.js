@@ -179,7 +179,7 @@ function Notification() {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const response = await axios.get('http://192.168.138.130:8080/api/admin/announcements');
+        const response = await axios.get('http://3.7.14.21:8080/api/admin/announcements');
         if (response.status === 200) {
           setNotifications(response.data);
           setLoading(false);

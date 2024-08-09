@@ -9,7 +9,7 @@ function TutorCartPage() {
 
   useEffect(() => {
     // Fetch tutor profiles from the backend API
-    axios.get("http://192.168.138.130:8080/api/tutor-profiles")
+    axios.get("http://3.7.14.21:8080/api/tutor-profiles")
       .then(response => {
         setTutorProfiles(response.data);
       })

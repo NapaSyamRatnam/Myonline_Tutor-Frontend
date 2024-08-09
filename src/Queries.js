@@ -200,7 +200,7 @@ function Queries() {
 
   const handleReceiveMessage = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api/queries/query');
+      const response = await axios.get('http://3.7.14.21:8080/api/queries/query');
       setReceivedMessages(response.data);
     } catch (error) {
       console.error("Error receiving messages:", error);
@@ -209,7 +209,7 @@ function Queries() {
 
   const handleSendReply = async (id) => {
     try {
-      const response = await axios.post('http://192.168.138.130:8081/api/queries/create', { id, reply });
+      const response = await axios.post('http://3.7.14.21:8081/api/queries/create', { id, reply });
       console.log("Response from server:", response.data);
 
       // After sending reply, update the messages
@@ -223,7 +223,7 @@ function Queries() {
 
   const handleResolveQuery = async (id) => {
     try {
-      const response = await axios.post(`http://192.168.138.130:8080/api/queries/resolve/${id}`);
+      const response = await axios.post(`http://3.7.14.21:8080/api/queries/resolve/${id}`);
       console.log("Query resolved:", response.data);
 
       // After resolving query, update the messages

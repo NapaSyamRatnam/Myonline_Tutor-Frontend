@@ -11,7 +11,7 @@ const PaymentHistory = ({ currentUser }) => {
   useEffect(() => {
     const fetchPaymentHistory = async () => {
       try {
-        const response = await axios.get(`http://192.168.138.130:8080/payments/paymentget/${currentUser.email}`);
+        const response = await axios.get(`http://3.7.14.21:8080/payments/paymentget/${currentUser.email}`);
         setPaymentHistory(response.data);
       } catch (error) {
         console.error('Error fetching payment history:', error);

@@ -36,7 +36,7 @@ function Task() {
   const fetchData = async () => {
     if (tutorData && tutorData.courses) {
       try {
-        const response = await axios.get(`http://192.168.138.130:8080/api/users/by-course/${tutorData.courses.join(',')}`);
+        const response = await axios.get(`http://3.7.14.21:8080/api/users/by-course/${tutorData.courses.join(',')}`);
         setUsers(response.data);
       } catch (error) {
         console.error('Error while fetching users:', error);
@@ -52,7 +52,7 @@ function Task() {
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://192.168.138.130:8080/api-v1/${id}`)
+      axios.get(`http://3.7.14.21:8080/api-v1/${id}`)
         .then(response => {
           setTutorData(response.data);
         })
@@ -146,7 +146,7 @@ function Task() {
     }
 
     try {
-      const response = await axios.post('http://192.168.138.130:8080/taskApi/task/create', task);
+      const response = await axios.post('http://3.7.14.21:8080/taskApi/task/create', task);
       alert('Task created successfully:', response.data);
       setTask({
         userId: '',
@@ -162,7 +162,7 @@ function Task() {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/taskApi/tasks');
+      const response = await axios.get('http://3.7.14.21:8080/taskApi/tasks');
       setTasks(response.data);
     } catch (error) {
       console.error('Error fetching tasks:', error);

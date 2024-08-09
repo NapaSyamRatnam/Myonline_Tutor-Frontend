@@ -9,7 +9,7 @@ function JavaTutorList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get(`//192.168.138.130:8080/api-v1/by-course/Java`)
+    axios.get(`//3.7.14.21:8080/api-v1/by-course/Java`)
       .then(response => {
         setUsers(response.data);
       })

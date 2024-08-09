@@ -34,7 +34,7 @@ function Settings() {
         return;
       }
       
-      const response = await axios.get(`http://192.168.138.130:8080/api/admin/profile/${adminId}`);
+      const response = await axios.get(`http://3.7.14.21:8080/api/admin/profile/${adminId}`);
 
       if (response.status === 200) {
         setProfileDetails(response.data);
@@ -49,7 +49,7 @@ function Settings() {
   const handleSaveProfile = async () => {
     if (validateForm()) {
       try {
-        const response = await axios.post(`http://192.168.138.130:8080/api/admin/update-profile/${profileDetails.id}`, profileDetails);
+        const response = await axios.post(`http://3.7.14.21:8080/api/admin/update-profile/${profileDetails.id}`, profileDetails);
 
         if (response.status === 200) {
           toast.success("Profile details updated successfully");

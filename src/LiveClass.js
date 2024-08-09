@@ -34,7 +34,7 @@ function LiveClass() {
   const fetchData = async () => {
     if (tutorData && tutorData.courses) {
       try {
-        const response = await axios.get(`http://192.168.138.130:8080/api/users/by-course/${tutorData.courses.join(',')}`);
+        const response = await axios.get(`http://3.7.14.21:8080/api/users/by-course/${tutorData.courses.join(',')}`);
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
@@ -52,7 +52,7 @@ function LiveClass() {
     const tutorId = localStorage.getItem('tutorId');
     if (tutorId) {
       try {
-        const response = await axios.get(`http://192.168.138.130:8080/api-v1/${tutorId}`);
+        const response = await axios.get(`http://3.7.14.21:8080/api-v1/${tutorId}`);
         setTutorData(response.data);
       } catch (error) {
         console.error('Error fetching tutor details:', error);
@@ -126,13 +126,13 @@ function LiveClass() {
         const responses = await Promise.all(
           users.map(async (user) => {
             const formDataForUser = { ...formData, userId: user.id };
-            return await axios.post('http://192.168.138.130:8080/api/messages/post', formDataForUser);
+            return await axios.post('http://3.7.14.21:8080/api/messages/post', formDataForUser);
           })
         );
         setSubmittedData([...submittedData, ...responses.map(response => response.data)]);
       } else {
         formData.userId = selectedUserId;
-        const response = await axios.post('http://192.168.138.130:8080/api/messages/post', formData);
+        const response = await axios.post('http://3.7.14.21:8080/api/messages/post', formData);
         setSubmittedData([...submittedData, response.data]);
       }
 

@@ -62,7 +62,7 @@ function ViewCourses() {
     // Fetch courses from the server
     const fetchCourses = async () => {
       try {
-        const response = await axios.get("http://192.168.138.130:8080/api/admin/courses");
+        const response = await axios.get("http://3.7.14.21:8080/api/admin/courses");
         setCourses(response.data);
       } catch (error) {
         console.error("Error fetching courses:", error);

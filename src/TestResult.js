@@ -10,7 +10,7 @@ function TestResult() {
 
   const fetchTestData = async () => {
     try {
-      const response = await fetch('http://192.168.138.130:8080/api/test/getAll'); // Assuming this is the endpoint to fetch test data
+      const response = await fetch('http://3.7.14.21:8080/api/test/getAll'); // Assuming this is the endpoint to fetch test data
       const data = await response.json();
       setTestData(data);
     } catch (error) {

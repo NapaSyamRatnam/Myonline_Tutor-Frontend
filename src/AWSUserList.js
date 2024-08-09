@@ -99,7 +99,7 @@ function AWSUserList() {
   }, [courseType]);
 
   const fetchData = () => {
-    axios.get(`http://192.168.138.130:8080/api/users/by-course/Technical - AWS`)
+    axios.get(`http://3.7.14.21:8080/api/users/by-course/Technical - AWS`)
       .then(response => {
         setUsers(response.data); // Update users state with fetched data
       })
@@ -107,7 +107,7 @@ function AWSUserList() {
         console.error(`Error fetching ${courseType} course users:`, error);
       });
 
-    axios.get(`http://192.168.138.130:8080/api-v1/by-course/AWS`)
+    axios.get(`http://3.7.14.21:8080/api-v1/by-course/AWS`)
       .then(response => {
         setTutorData(response.data);
       })
@@ -150,7 +150,7 @@ function AWSUserList() {
     // Log postData for debugging
     console.log("Sending data to backend:", postData);
   
-    axios.post("http://192.168.138.130:8080/admin/assign", postData)
+    axios.post("http://3.7.14.21:8080/admin/assign", postData)
       .then(response => {
         console.log(postData);
         console.log("Tutor assigned successfully");

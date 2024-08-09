@@ -9,7 +9,7 @@ function Feedback() {
 
   useEffect(() => {
     // Fetch feedback data
-    axios.get("http://192.168.138.130:8080/api/admin/feedback")
+    axios.get("http://3.7.14.21:8080/api/admin/feedback")
       .then(response => {
         setFeedbackData(response.data);
       })

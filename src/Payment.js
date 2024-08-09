@@ -145,7 +145,7 @@ const Payment = () => {
 
   const fetchAllPayments = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api/payments/calling');
+      const response = await axios.get('http://3.7.14.21:8080/api/payments/calling');
       setPaymentDetails(response.data);
     } catch (error) {
       console.error('Error fetching payments:', error.response ? error.response.data : error.message);
@@ -157,7 +157,7 @@ const Payment = () => {
 
     try {
       // Submit payment details
-      const response = await axios.post('http://192.168.138.130:8080/api/payments/save', {
+      const response = await axios.post('http://3.7.14.21:8080/api/payments/save', {
         cardNumber,
         expiry,
         cvv,

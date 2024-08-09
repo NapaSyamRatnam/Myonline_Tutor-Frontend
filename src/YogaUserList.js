@@ -100,7 +100,7 @@ function YogaUserList() {
   }, [courseType]);
 
   const fetchData = () => {
-    axios.get(`http://192.168.138.130:8080/api/users/byCourse/Professional -Yoga`)
+    axios.get(`http://3.7.14.21:8080/api/users/byCourse/Professional -Yoga`)
       .then(response => {
         setUsers(response.data); // Update users state with fetched data
       })
@@ -108,7 +108,7 @@ function YogaUserList() {
         console.error(`Error fetching ${courseType} course users:`, error);
       });
 
-    axios.get(`http://192.168.138.130:8080/api-v1/by-course/Yoga`)
+    axios.get(`http://3.7.14.21:8080/api-v1/by-course/Yoga`)
       .then(response => {
         setTutorData(response.data);
       })
@@ -151,7 +151,7 @@ function YogaUserList() {
     // Log postData for debugging
     console.log("Sending data to backend:", postData);
   
-    axios.post("http://192.168.138.130:8080/admin/assign", postData)
+    axios.post("http://3.7.14.21:8080/admin/assign", postData)
       .then(response => {
         console.log(postData);
         console.log("Tutor assigned successfully");

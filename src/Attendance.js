@@ -36,7 +36,7 @@ function Attendance() {
 
   useEffect(() => {
     axios
-      .get(`http://192.168.138.130:8080/api-v1/${id}`)
+      .get(`http://3.7.14.21:8080/api-v1/${id}`)
       .then((response) => {
         setTutorData(response.data);
       })
@@ -48,7 +48,7 @@ function Attendance() {
   useEffect(() => {
     if (tutorData && tutorData.courses) {
       axios
-        .get(`http://192.168.138.130:8080/api/users/by-course/${tutorData.courses.join(',')}`)
+        .get(`http://3.7.14.21:8080/api/users/by-course/${tutorData.courses.join(',')}`)
         .then((response) => {
           setUsers(response.data);
         })
@@ -64,7 +64,7 @@ function Attendance() {
 
     if (!attendanceTaken) {
       axios
-        .get(`http://192.168.138.130:8080/api/users/${userId}`)
+        .get(`http://3.7.14.21:8080/api/users/${userId}`)
         .then((response) => {
           const fname = response.data.firstName;
           const lname = response.data.lastName;
@@ -89,7 +89,7 @@ function Attendance() {
   const sendDataToBackend = (userId, status, fname, lname) => {
     const formattedDate = new Date().toISOString().split("T")[0];
     axios
-      .post("http://192.168.138.130:8080/user/createAttendance", {
+      .post("http://3.7.14.21:8080/user/createAttendance", {
         userID: userId,
         status: status,
         firstName: fname,

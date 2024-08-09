@@ -30,7 +30,7 @@ function CoursePage() {
   useEffect(() => {
     const fetchCourseDetails = async () => {
       try {
-        const response = await axios.get(`http://192.168.138.130:8080/api/admin/courses/1`);
+        const response = await axios.get(`http://3.7.14.21:8080/api/admin/courses/1`);
         setCourse(response.data);
       } catch (error) {
         console.error("Error fetching course details:", error);

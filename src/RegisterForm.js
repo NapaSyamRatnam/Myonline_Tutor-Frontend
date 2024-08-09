@@ -34,7 +34,7 @@ function RegistrationForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "//localhost:8080/api/users/add",
+        "//3.7.14.21:8080/api/users/add",
         formData
       );
       console.log("Form submitted:", response.data);

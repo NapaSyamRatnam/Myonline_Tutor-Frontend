@@ -16,7 +16,7 @@ function OtpValidationOne() {
 
   const sendOtp = async () => {
     try {
-      const response = await axios.get(`http://192.168.138.130:8080/api/users/send-otp?email=${email}`);
+      const response = await axios.get(`http://3.7.14.21:8080/api/users/send-otp?email=${email}`);
       setMessage(response.data);
       setError('');
     } catch (error) {
@@ -27,7 +27,7 @@ function OtpValidationOne() {
 
   const verifyOtp = async () => {
     try {
-      const response = await axios.post(`http://192.168.138.130:8080/api/users/verify-otp?email=${email}&enteredOtp=${otp}`);
+      const response = await axios.post(`http://3.7.14.21:8080/api/users/verify-otp?email=${email}&enteredOtp=${otp}`);
       setMessage(response.data);
       setError('');
       setIsOtpValid(true);
@@ -40,7 +40,7 @@ function OtpValidationOne() {
 
   const updatePassword = async () => {
     try {
-      const response = await axios.put('http://192.168.138.130:8080/api-v1/tutorupdatePassword', {
+      const response = await axios.put('http://3.7.14.21:8080/api-v1/tutorupdatePassword', {
         email,
         password,
         confirmPassword,

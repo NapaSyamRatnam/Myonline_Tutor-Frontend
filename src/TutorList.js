@@ -12,7 +12,7 @@ function TutorList() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://192.168.138.130:8080/admin/show");
+      const response = await fetch("http://3.7.14.21:8080/admin/show");
       if (!response.ok) {
         throw new Error("Failed to fetch data");
       }

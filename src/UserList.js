@@ -24,7 +24,7 @@ function UserList() {
   useEffect(() => {
     // Fetch tutor details when the component mounts
     if (id) {
-      axios.get(`http://192.168.138.130:8080/api-v1/${id}`)
+      axios.get(`http://3.7.14.21:8080/api-v1/${id}`)
         .then(response => {
           setTutorData(response.data);
         })
@@ -36,7 +36,7 @@ function UserList() {
 
   useEffect(() => {
     if (tutorData && tutorData.courses) {
-      axios.get(`http://192.168.138.130:8080/api/users/by-course/${tutorData.courses.join(',')}`)
+      axios.get(`http://3.7.14.21:8080/api/users/by-course/${tutorData.courses.join(',')}`)
         .then(response => {
           setUsers(response.data);
           console.log(response.data)

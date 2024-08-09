@@ -72,7 +72,7 @@ function Get() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api/pays/latest');
+      const response = await axios.get('http://3.7.14.21:8080/api/pays/latest');
       setData(response.data);
       setError('');
     } catch (error) {

@@ -103,7 +103,7 @@ function Notifications() {
     // Fetch tutor details from localStorage
     const tutorId = localStorage.getItem('tutorId');
     if (tutorId) {
-      axios.get(`http://192.168.138.130:8080/api-v1/${tutorId}`)
+      axios.get(`http://3.7.14.21:8080/api-v1/${tutorId}`)
         .then(response => {
           setTutorData(response.data);
         })
@@ -117,7 +117,7 @@ function Notifications() {
     // Fetch notifications from the server when the component mounts
     const fetchNotifications = async () => {
       try {
-        const response = await axios.get("http://192.168.138.130:8080/api/admin/announcements/tutors");
+        const response = await axios.get("http://3.7.14.21:8080/api/admin/announcements/tutors");
         if (response.status === 200) {
           setNotifications(response.data);
         } else {

@@ -236,7 +236,7 @@ function ForgotPassword() {
     }
 
     try {
-      const response = await axios.get(`http://192.168.138.130:8080/api/users/send-otp?email=${email}`);
+      const response = await axios.get(`http://3.7.14.21:8080/api/users/send-otp?email=${email}`);
       setMessage(response.data);
       setError('');
     } catch (error) {
@@ -247,7 +247,7 @@ function ForgotPassword() {
 
   const verifyOtp = async () => {
     try {
-      const response = await axios.post(`http://192.168.138.130:8080/api/users/verify-otp?email=${email}&enteredOtp=${otp}`);
+      const response = await axios.post(`http://3.7.14.21:8080/api/users/verify-otp?email=${email}&enteredOtp=${otp}`);
       setMessage(response.data);
       setError('');
       setIsOtpValid(true);
@@ -272,7 +272,7 @@ function ForgotPassword() {
     }
 
     try {
-      const response = await axios.post('http://192.168.138.130:8080/api/users/update-password', {
+      const response = await axios.post('http://3.7.14.21:8080/api/users/update-password', {
         email,
         password,
         confirmPassword,

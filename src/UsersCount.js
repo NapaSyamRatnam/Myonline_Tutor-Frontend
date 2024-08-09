@@ -4,7 +4,7 @@ function UsersCount() {
   const [userCount, setUserCount] = useState(0);
 
   useEffect(() => {
-    fetch("http://192.168.138.130:8080/api/users/users/count")
+    fetch("http://3.7.14.21:8080/api/users/users/count")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch user count");

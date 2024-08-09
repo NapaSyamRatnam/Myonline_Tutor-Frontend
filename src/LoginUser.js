@@ -195,11 +195,11 @@ function LoginUser({ handleLogin }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://192.168.138.130:8080/api/users/loginuser', formData);
+      const response = await axios.post('http://3.7.14.21:8080/api/users/loginuser', formData);
 
       if (response && response.data === 'login success') {
         // Fetch the user details using the email and password
-        const userResponse = await axios.get(`http://192.168.138.130:8080/api/users/by-email-and-password?email=${formData.email}&password=${formData.password}`);
+        const userResponse = await axios.get(`http://3.7.14.21:8080/api/users/by-email-and-password?email=${formData.email}&password=${formData.password}`);
         if (userResponse && userResponse.data.length > 0) {
           // Set the current user after successful login
           handleLogin(userResponse.data[0]);

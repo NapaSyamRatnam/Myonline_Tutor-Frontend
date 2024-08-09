@@ -254,7 +254,7 @@ const FileList = ({ currentUser }) => {
     // Fetch tutor details from localStorage
     const tutorId = localStorage.getItem('tutorId');
     if (tutorId) {
-      axios.get(`http://192.168.138.130:8080/api-v1/${tutorId}`)
+      axios.get(`http://3.7.14.21:8080/api-v1/${tutorId}`)
         .then(response => {
           setTutorData(response.data);
         })

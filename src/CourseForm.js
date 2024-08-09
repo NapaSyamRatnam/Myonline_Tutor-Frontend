@@ -153,7 +153,7 @@ const CourseForm = () => {
 
   const fetchTutors = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api-v1/tutors');
+      const response = await axios.get('http://3.7.14.21:8080/api-v1/tutors');
       setTutors(response.data);
     } catch (error) {
       console.error('Error fetching tutors:', error);
@@ -162,7 +162,7 @@ const CourseForm = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api/users/users');
+      const response = await axios.get('http://3.7.14.21:8080/api/users/users');
       setUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -181,7 +181,7 @@ const CourseForm = () => {
     event.preventDefault();
     // Send assignment data to backend
     try {
-      await axios.post('http://192.168.138.130:8080/api-v1/assign', {
+      await axios.post('http://3.7.14.21:8080/api-v1/assign', {
         tutorId: selectedTutor,
         userId: selectedUser,
         courseName: courseName

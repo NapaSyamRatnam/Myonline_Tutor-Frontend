@@ -1002,7 +1002,7 @@ function AddNewTutor({ history }) {
           courses: [`${selectedMainOption} - ${selectedSubOption}`],
         };
 
-        const response = await axios.post("http://192.168.138.130:8080/api-v1/create", updatedFormData);
+        const response = await axios.post("http://3.7.14.21:8080/api-v1/create", updatedFormData);
         alert(response.data);
         window.location.reload();
       } catch (error) {

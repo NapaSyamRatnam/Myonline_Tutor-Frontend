@@ -27,9 +27,9 @@ function UserViewAttendence() {
       try {
         let response;
         if (month !== '') {
-          response = await axios.get(`http://192.168.138.130:8080/user/getByMonth/${month}`);
+          response = await axios.get(`http://3.7.14.21:8080/user/getByMonth/${month}`);
         } else {
-          response = await axios.get('http://192.168.138.130:8080/user/getAllAttendance');
+          response = await axios.get('http://3.7.14.21:8080/user/getAllAttendance');
         }
         setAttendanceData(response.data);
       } catch (error) {

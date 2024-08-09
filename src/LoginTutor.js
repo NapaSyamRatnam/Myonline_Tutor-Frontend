@@ -266,7 +266,7 @@ function LoginTutor() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://192.168.138.130:8080/api-v1/logintutor', formData);
+      const response = await axios.post('http://3.7.14.21:8080/api-v1/logintutor', formData);
   
       console.log(response.data);
   

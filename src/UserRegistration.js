@@ -975,7 +975,7 @@ function UserRegistration() {
           selectedCourses.push(`${selectedMainOption} - ${selectedSubOption}`);
         }
 
-        await axios.post('http://192.168.138.130:8080/api/users/user/register', {
+        await axios.post('http://3.7.14.21:8080/api/users/user/register', {
           firstName,
           lastName,
           gender,

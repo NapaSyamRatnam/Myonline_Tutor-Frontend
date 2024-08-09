@@ -12,7 +12,7 @@ function Adminnotifications() {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const response = await axios.get('http://192.168.138.130:8080/api/admin/announcements');
+        const response = await axios.get('http://3.7.14.21:8080/api/admin/announcements');
         if (response.status === 200) {
           // Limiting notifications to 4 items
           setNotifications(response.data.slice(0, 4));

@@ -311,7 +311,7 @@ function TutorProfile() {
     const tutorId = localStorage.getItem('tutorId');
     if (tutorId) {
       // Fetch tutor details based on the stored tutor ID
-      axios.get(`http://192.168.138.130:8080/api-v1/${tutorId}`)
+      axios.get(`http://3.7.14.21:8080/api-v1/${tutorId}`)
         .then(response => {
           setTutorData(response.data);
           // Initialize edited data with fetched data
@@ -337,7 +337,7 @@ function TutorProfile() {
   // Function to handle save button click
   const handleSaveClick = () => {
     // Update the backend with edited data
-    axios.put(`http://192.168.138.130:8080/api-v1/${tutorData.id}`, editedData)
+    axios.put(`http://3.7.14.21:8080/api-v1/${tutorData.id}`, editedData)
       .then(response => {
         // Update the local state with the updated data
         setTutorData(editedData);

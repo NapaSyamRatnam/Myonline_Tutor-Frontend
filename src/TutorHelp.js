@@ -26,7 +26,7 @@ function TutorHelp() {
     // Fetch tutor details when the component mounts
     const tutorId = localStorage.getItem('tutorId');
     if (tutorId) {
-      axios.get(`http://192.168.138.130:8080/api-v1/${tutorId}`)
+      axios.get(`http://3.7.14.21:8080/api-v1/${tutorId}`)
         .then(response => {
           setTutorData(response.data);
         })
@@ -43,7 +43,7 @@ function TutorHelp() {
     }
 
     try {
-      const response = await axios.post('http://192.168.138.130:8080/api/help/help1', {
+      const response = await axios.post('http://3.7.14.21:8080/api/help/help1', {
         content: helpMessage,
         sender: senderName, 
       });
@@ -59,7 +59,7 @@ function TutorHelp() {
 
   const getAllHelpMessages = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api/help/Support'); 
+      const response = await axios.get('http://3.7.14.21:8080/api/help/Support'); 
       setHelpMessages(response.data);
     } catch (error) {
       console.error('Error fetching help messages', error);

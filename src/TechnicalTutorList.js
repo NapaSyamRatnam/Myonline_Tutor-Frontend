@@ -9,7 +9,7 @@ function TechnicalTutorList() {
   const [tutors, setTutors] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://192.168.138.130:8080/api-v1/by-course/Java`)
+    axios.get(`http://3.7.14.21:8080/api-v1/by-course/Java`)
       .then(response => {
         setTutors(response.data);
       })

@@ -379,14 +379,14 @@ function UserTask({ currentUser }) {
   useEffect(() => {
     if (currentUser) {
       // Fetch tasks by user ID
-      axios.get(`http://192.168.138.130:8080/taskApi/user/${currentUser.id}`)
+      axios.get(`http://3.7.14.21:8080/taskApi/user/${currentUser.id}`)
         .then(response => {
           setTasks(response.data);
         })
         .catch(error => console.error('Error fetching tasks:', error));
 
       // Fetch user details
-      axios.get(`http://192.168.138.130:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`)
+      axios.get(`http://3.7.14.21:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`)
         .then(response => {
           setUserDetails(response.data[0]);
         })
@@ -408,7 +408,7 @@ function UserTask({ currentUser }) {
   const handleUpload = (taskId) => {
     const updatedTask = tasks.find((task) => task.taskId === taskId);
 
-    axios.put("http://192.168.138.130:8080/taskApi/task/update", updatedTask)
+    axios.put("http://3.7.14.21:8080/taskApi/task/update", updatedTask)
       .then((response) => {
         const responseData = response.data;
         alert('Uploaded successfully:', response.data);

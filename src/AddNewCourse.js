@@ -118,7 +118,7 @@ function AddNewCourse() {
     }
 
     try {
-      const response = await axios.post("http://192.168.138.130:8080/api/admin/add-course", {
+      const response = await axios.post("http://3.7.14.21:8080/api/admin/add-course", {
         courses,
         description,
         price,

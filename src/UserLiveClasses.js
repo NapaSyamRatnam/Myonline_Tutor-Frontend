@@ -156,7 +156,7 @@ function UserLiveClasses({ currentUser }) {
   useEffect(() => {
     // Fetch user details when currentUser changes
     if (currentUser) {
-      axios.get(`http://192.168.138.130:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`)
+      axios.get(`http://3.7.14.21:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`)
         .then(response => {
           setUserDetails(response.data[0]); // Assuming the API returns a single user
           fetchMessagesByUserId(response.data[0].id);
@@ -177,7 +177,7 @@ function UserLiveClasses({ currentUser }) {
   // Function to fetch messages by user id
   const fetchMessagesByUserId = async (userId) => {
     try {
-      const response = await axios.get(`http://192.168.138.130:8080/api/messages/user/${userId}`);
+      const response = await axios.get(`http://3.7.14.21:8080/api/messages/user/${userId}`);
       setMessages(response.data);
     } catch (error) {
       console.error('Error fetching data by user id:', error);

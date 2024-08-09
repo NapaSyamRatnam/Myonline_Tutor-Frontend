@@ -21,7 +21,7 @@ function AddNewAdmin() {
   const handleAddNewAdmin = async () => {
     if (validateForm()) {
       try {
-        const response = await axios.post("http://192.168.138.130:8080/api/admin/addadmin", newAdminDetails);
+        const response = await axios.post("http://3.7.14.21:8080/api/admin/addadmin", newAdminDetails);
 
         if (response.status === 200) {
           console.log("New admin added successfully");

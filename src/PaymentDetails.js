@@ -69,7 +69,7 @@ const PaymentDetails = () => {
     // Function to fetch payment data from the backend
     const fetchPaymentData = async () => {
         try {
-            const response = await fetch('http://192.168.138.130:8080/api/payments/calling');
+            const response = await fetch('http://3.7.14.21:8080/api/payments/calling');
             if (!response.ok) {
                 throw new Error('Failed to fetch payment data');
             }

@@ -9,7 +9,7 @@ function PythonTutorList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://192.168.138.130:8080/api-v1/by-course/Python`)
+    axios.get(`http://3.7.14.21:8080/api-v1/by-course/Python`)
       .then(response => {
         setUsers(response.data);
       })

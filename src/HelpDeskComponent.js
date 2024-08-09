@@ -119,7 +119,7 @@ function HelpDeskComponent() {
     // Add more validation rules for the helpMessage if needed
 
     try {
-      const response = await axios.post('http://192.168.138.130:8080/api/help/help1', {
+      const response = await axios.post('http://3.7.14.21:8080/api/help/help1', {
         content: helpMessage,
         sender: senderName,
       });
@@ -136,7 +136,7 @@ function HelpDeskComponent() {
 
   const getAllHelpMessages = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api/help/Support');
+      const response = await axios.get('http://3.7.14.21:8080/api/help/Support');
 
       console.log('Help messages:', response.data);
       setHelpMessages(response.data);

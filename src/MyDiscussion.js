@@ -29,7 +29,7 @@ function MyDiscussion() {
   useEffect(() => {
     const tutorId = localStorage.getItem('tutorId');
     if (tutorId) {
-      axios.get(`http://192.168.138.130:8080/api-v1/${tutorId}`)
+      axios.get(`http://3.7.14.21:8080/api-v1/${tutorId}`)
         .then(response => {
           setTutorData(response.data);
         })
@@ -46,7 +46,7 @@ function MyDiscussion() {
 }, [tutorData]);
 
 const fetchData = () => {
-    axios.get(`http://192.168.138.130:8080/api/users/by-course/${tutorData.courses.join(',')}`)
+    axios.get(`http://3.7.14.21:8080/api/users/by-course/${tutorData.courses.join(',')}`)
       .then(response => {
         setUsers(response.data); // Update users state with fetched data
       })
@@ -89,7 +89,7 @@ const fetchData = () => {
     }
 
     try {
-      const response = await axios.post('http://192.168.138.130:8080/api/discussion/save', discussionFormData);
+      const response = await axios.post('http://3.7.14.21:8080/api/discussion/save', discussionFormData);
 
       if (response.status === 200) {
         alert('Discussion saved successfully');
@@ -110,7 +110,7 @@ const fetchData = () => {
 
   const fetchDiscussions = async () => {
     try {
-      const response = await axios.get('http://192.168.138.130:8080/api/discussion/getAll');
+      const response = await axios.get('http://3.7.14.21:8080/api/discussion/getAll');
       if (response.status === 200) {
         setDiscussionsList(response.data);
       } else {

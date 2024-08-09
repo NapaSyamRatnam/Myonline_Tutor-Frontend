@@ -65,7 +65,7 @@ function Tutors() {
 
   const fetchTutors = async () => {
     try {
-      const response = await fetch('http://192.168.138.130:8080/api-v1/tutors');
+      const response = await fetch('http://3.7.14.21:8080/api-v1/tutors');
       const data = await response.json();
       setTutors(data);
       setFilteredTutors(data); // Initially, set filteredTutors to all tutors
@@ -90,7 +90,7 @@ function Tutors() {
   const handleDelete = async (id) => {
     try {
       // Send DELETE request to the backend API
-      const response = await fetch(`http://192.168.138.130:8080/api-v1/${id}`, {
+      const response = await fetch(`http://3.7.14.21:8080/api-v1/${id}`, {
         method: 'DELETE',
       });
   

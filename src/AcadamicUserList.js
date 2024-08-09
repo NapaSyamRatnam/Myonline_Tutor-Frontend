@@ -79,7 +79,7 @@ function AcademicUserList() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://192.168.138.130:8080/api/users/byCourse/Professional - Music`)
+    axios.get(`http://3.7.14.21:8080/api/users/byCourse/Professional - Music`)
       .then(response => {
         setUsers(response.data);
       })

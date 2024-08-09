@@ -365,7 +365,7 @@ const UserSetting = ({ currentUser }) => {
 
   useEffect(() => {
     if (currentUser) {
-      axios.get(`http://192.168.138.130:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`)
+      axios.get(`http://3.7.14.21:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`)
         .then(response => {
           setUserDetails(response.data[0]); // Assuming the API returns a single user
         })

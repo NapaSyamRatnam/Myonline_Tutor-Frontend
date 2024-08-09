@@ -211,11 +211,11 @@ function UserViewReports() {
         //   response = await axios.get(`http://localhost:8081/taskApi/task/${taskId}/user/${userId}`);
         // }
          if (taskId !== '') {
-          response = await axios.get(`http://192.168.138.130:8080/taskApi/task/${taskId}`);
+          response = await axios.get(`http://3.7.14.21:8080/taskApi/task/${taskId}`);
         } else if (userId !== '') {
-          response = await axios.get(`http://192.168.138.130:8080/taskApi/user/${userId}`);
+          response = await axios.get(`http://3.7.14.21:8080/taskApi/user/${userId}`);
         } else {
-          response = await axios.get('http://192.168.138.130:8080/taskApi/tasks');
+          response = await axios.get('http://3.7.14.21:8080/taskApi/tasks');
         }
 
         setAttendanceData(response.data);

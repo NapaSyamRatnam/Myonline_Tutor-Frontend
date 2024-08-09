@@ -417,7 +417,7 @@ function Pay() {
     }
 
     try {
-      const response = await axios.post('http://192.168.138.130:8080/cash', {
+      const response = await axios.post('http://3.7.14.21:8080/cash', {
         firstName, // Sending first name to backend
         lastName, // Sending last name to backend
         amount: selectedAmount,

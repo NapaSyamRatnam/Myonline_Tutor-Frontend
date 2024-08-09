@@ -171,7 +171,7 @@ const Courses = ({ currentUser }) => {
 
     useEffect(() => {
         if (currentUser) {
-            axios.get(`http://192.168.138.130:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`)
+            axios.get(`http://3.7.14.21:8080/api/users/by-email-and-password?email=${currentUser.email}&password=${currentUser.password}`)
                 .then(response => {
                     setUserDetails(response.data[0]);
                     fetchTutor(currentUser.email);
@@ -184,7 +184,7 @@ const Courses = ({ currentUser }) => {
 
     const fetchTutor = async (email) => {
         try {
-            const response = await axios.get(`http://192.168.138.130:8080/admin/get/${email}`);
+            const response = await axios.get(`http://3.7.14.21:8080/admin/get/${email}`);
             setTutor(response.data);
             fetchTutors(response.data.assignTutorname);
         } catch (error) {
@@ -195,7 +195,7 @@ const Courses = ({ currentUser }) => {
 
     const fetchTutors = async (firstName) => {
         try {
-            const response = await axios.get(`http://192.168.138.130:8080/api-v1/by-first-name/${firstName}`);
+            const response = await axios.get(`http://3.7.14.21:8080/api-v1/by-first-name/${firstName}`);
             setTutors(response.data);
         } catch (error) {
             console.error('Error fetching tutors:', error);

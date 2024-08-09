@@ -149,7 +149,7 @@ function TutorTask() {
 
     if (isValid) {
       try {
-        const response = await axios.post('http://192.168.138.130:8081/taskApi/task/create', task);
+        const response = await axios.post('http://3.7.14.21:8081/taskApi/task/create', task);
         alert('Task created successfully:', response.data);
       } catch (error) {
         alert('Error creating task:', error);

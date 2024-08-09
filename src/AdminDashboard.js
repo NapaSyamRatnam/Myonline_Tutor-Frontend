@@ -70,7 +70,7 @@ const AdminDashboard = () => {
   const fetchTutorsCount = () => {
     // Make a fetch request to your backend to get tutors count
     // Replace 'YOUR_TUTORS_COUNT_ENDPOINT' with your actual endpoint
-    fetch('http://192.168.138.130:8080/api-v1/tutors/count')
+    fetch('http://3.7.14.21:8080/api-v1/tutors/count')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch tutors count');
@@ -84,7 +84,7 @@ const AdminDashboard = () => {
   const fetchUsersCount = () => {
     // Make a fetch request to your backend to get users count
     // Replace 'YOUR_USERS_COUNT_ENDPOINT' with your actual endpoint
-    fetch('http://192.168.138.130:8080/api/users/users/count')
+    fetch('http://3.7.14.21:8080/api/users/users/count')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch users count');
@@ -102,7 +102,7 @@ const AdminDashboard = () => {
     const adminId = localStorage.getItem('adminId');
     if (adminId) {
       // Fetch admin details using admin ID
-      fetch(`http://192.168.138.130:8080/api/admin/profile/${adminId}`)
+      fetch(`http://3.7.14.21:8080/api/admin/profile/${adminId}`)
         .then(response => {
           if (!response.ok) {
             throw new Error('Failed to fetch admin details');

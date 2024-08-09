@@ -21,7 +21,7 @@ function Announcement() {
 
   const fetchUserIds = async () => {
     try {
-      const response = await axios.get("http://192.168.138.130:8080/api/users/users/ids");
+      const response = await axios.get("http://3.7.14.21:8080/api/users/users/ids");
       setUserIds(response.data);
     } catch (error) {
       console.error("Error fetching user IDs:", error);
@@ -30,7 +30,7 @@ function Announcement() {
 
   const fetchTutorIds = async () => {
     try {
-      const response = await axios.get("http://192.168.138.130:8080/api-v1/tutors/ids");
+      const response = await axios.get("http://3.7.14.21:8080/api-v1/tutors/ids");
       setTutorIds(response.data);
     } catch (error) {
       console.error("Error fetching tutor IDs:", error);
@@ -89,7 +89,7 @@ function Announcement() {
 
     if (validateForm()) {
       try {
-        const response = await axios.post("http://192.168.138.130:8080/api/admin/add-announcement", {
+        const response = await axios.post("http://3.7.14.21:8080/api/admin/add-announcement", {
           title,
           message,
           recipientType,

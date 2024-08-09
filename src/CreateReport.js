@@ -24,7 +24,7 @@ function CreateReport() {
     // Fetch tutor details from localStorage
     const tutorId = localStorage.getItem('tutorId');
     if (tutorId) {
-      axios.get(`http://192.168.138.130:8080/api-v1/${tutorId}`)
+      axios.get(`http://3.7.14.21:8080/api-v1/${tutorId}`)
         .then(response => {
           setTutorData(response.data);
         })
@@ -44,7 +44,7 @@ function CreateReport() {
 
   const handleGetTask = async () => {
     try {
-      const response = await axios.get(`http://192.168.138.130:8080/taskApi/user/${userId}`);
+      const response = await axios.get(`http://3.7.14.21:8080/taskApi/user/${userId}`);
       setTaskData(response.data);
     } catch (error) {
       alert('Error fetching task data:', error);
@@ -59,7 +59,7 @@ function CreateReport() {
         remarks: remarks,
       };
 
-      await axios.put(`http://localhost:8080/taskApi/task/update`, updatedTask);
+      await axios.put(`http://3.7.14.21:8080/taskApi/task/update`, updatedTask);
 
       // Optionally, you can fetch the updated data after posting
       handleGetTask();
